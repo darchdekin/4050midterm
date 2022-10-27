@@ -18,5 +18,6 @@ class Solution:
                 if node == destination:
                     return True
                 if not explored[node]:
+                    explored[node] = True
                     stack.append(node)
         return False
